@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body 
+{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.topbarIcon
+{
+    width: 30px;
+    height: 30px;
+}
+
+.iconButton
+{
+    padding: 0;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-title 
+{
+    font-family: 'Inter'; 
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.topbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 2px 0 0 gray;
+    box-sizing: border-box;
+}
+
+.hero-image-container 
+{
+    width: 100%;
+    height: 350px;
+    margin-top: 64px;
+}
+
+.hero-image 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info-section 
+{
+    background-color: #FEFAF6;
+    margin-top: -40px;
+    border-radius: 40px 40px 0 0;
+    padding: 30px;
+    position: relative;
+}
+
+.product-name 
+{
+    margin: 0;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.rating-container 
+{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.stars img 
+{
+    width: 16px;
+    margin-right: 2px;
+}
+
+.rating-container::after 
+{
+    content: attr(star-rating);
+    font-size: 0.9rem;
+    color: #888;
+    margin-left: 8px;
+}
+
+.product-price 
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin: 15px 0;
+}
+
+.product-description 
+{
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.custom-divider 
+{
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
+}
+
+.green-marker 
+{
+    position: absolute;
+    top: -3px;
+    left: 45%;
+    width: 40px;
+    height: 7px;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+.checklist 
+{
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li:nth-child(odd)
+{
+    background-color: white;
+}
+
+.checklist li 
+{
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checklist li::before 
+{
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #28A745;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.purchase-controls 
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.quantity-selector 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.qty-btn 
+{
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2D5A27;
+    border-radius: 25px;
+    color: #2D5A27;
+    background-color: white;
+    font-size: 25px;
+
+}
+
+.qty-btn#plus
+{
+    background-color: #2D5A27;
+    color: white;
+}
+
+.qty-number 
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px;
+}
+
+.add-to-cart-btn 
+{
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}

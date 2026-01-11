@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aurora - Detalle</title>
+    <link rel="stylesheet" href="styleProduct.css">
+</head>
+<body>
+    <header>
+        <nav class="topbar">
+            <button class="iconButton"><img class="topbarIcon" src="arrow.png" alt="Volver"></button>
+            <h1 class="nav-title">Detalle</h1>
+            <button class="iconButton"><img class="topbarIcon" src="heart.png" alt="Favorito"></button>
+        </nav>
+        <div class="hero-image-container">
+            <img src="product.jpg" alt="Café Especial" class="hero-image">
+        </div>
+    </header>
+
+    <main class="product-info-section">
+        <div class="info-header">
+            <h2 class="product-name">Expresso Intenso</h2>
+            <div class="rating-container" star-rating="(4.8)">
+                <div class="stars">
+                    <img src="star.png" alt="estrella">
+                    <img src="star.png" alt="estrella">
+                    <img src="star.png" alt="estrella">
+                    <img src="star.png" alt="estrella">
+                    <img src="clearStar.png" alt="estrella">
+                </div>
+            </div>
+        </div>
+
+        <p class="product-price">$3.50</p>
+        
+        <p class="product-description">
+            Nuestro espresso signature combina granos 100% arábica de origen único de las montañas de Colombia. Tostado artesanalmente para resaltar sus notas de chocolate negro, caramelo y un toque cítrico que perdura en el paladar.
+        </p>
+
+        <div class="custom-divider">
+            <div class="green-marker"></div>
+        </div>
+
+        <section class="ingredients-section">
+            <h3>Ingredientes y Origen</h3>
+            <ul class="checklist">
+                <li>Granos de café 100% Arábica</li>
+                <li>Origen: Antioquia, Colombia</li>
+                <li>Tostado Artesanal</li>
+                <li>Sin conservantes</li>
+            </ul>
+        </section>
+
+        <section class="purchase-controls">
+            <div class="quantity-selector">
+                <button class="qty-btn" id="minus">-</button>
+                <span class="qty-number">1</span>
+                <button class="qty-btn" id="plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Añadir al carrito - $3.50</button>
+        </section>
+    </main>
+
+</body>
+</html>

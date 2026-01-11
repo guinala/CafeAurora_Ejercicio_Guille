@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Café Aurora</title>
+    <link rel="stylesheet" href="styleContact.css">
+</head>
+<body>
+
+    <header>
+            <nav class="topbar">
+                <button class="iconButton"><img class="topbarIcon" src="arrow.png" alt="Volver"></button>
+                <h1 class="nav-title">Contacto</h1>
+                <div></div>
+            </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="intro-text">
+            <h2 class="main-title">¿Tienes alguna pregunta?</h2>
+            <p class="subtitle">Estamos aquí para ayudarte a elegir el grano perfecto.</p>
+        </section>
+
+        <form class="contact-form">
+            <div class="input-group required">
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre completo">
+            </div>
+
+            <div class="input-group required has-error">
+                <label>Email</label>
+                <input type="email" value="correo-incorrecto@" placeholder="Invalid-email">
+            </div>
+
+            <div class="input-group">
+                <label>Teléfono</label>
+                <input type="tel" placeholder="+34 600 000 000">
+            </div>
+
+            <div class="input-group required">
+                <label>Mensaje</label>
+                <textarea placeholder="Cuéntanos qué necesitas..."></textarea>
+            </div>
+
+            <div class="privacy-container">
+                <label class="checkbox-label">
+                    <input type="checkbox"> Acepto las condiciones de privacidad
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn-disabled">Completa todos los campos requeridos</button>
+        </form>
+
+        <section class="next-steps-card">
+            <h3>¿Qué sucede después?</h3>
+            <ol class="custom-steps">
+                <li>Revisamos tu mensaje en menos de 24 horas</li>
+                <li>Un miembro del equipo se pondrá en contacto contigo.</li>
+                <li>Resolveremos tus dudas o procesaremos tu solicitud</li>
+            </ol>
+        </section>
+    </main>
+
+</body>
+</html>

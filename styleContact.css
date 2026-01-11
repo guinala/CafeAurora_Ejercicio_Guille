@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body
+{
+    background-color: #FEFAF6;
+}
+
+.topbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 2px 0 0 rgb(171, 171, 171);
+    box-sizing: border-box;
+}
+
+.topbarIcon
+{
+    width: 24px;
+    height: 24px;
+}
+
+
+.iconButton
+{
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-title 
+{
+    font-family: 'Inter'; 
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contact-main 
+{
+    margin: 75px auto 0 auto; 
+    padding: 20px;
+    max-width: 600px;
+}
+
+.input-group.has-error input 
+{
+    border-color: #e74c3c; 
+    background-color: #fdf2f2; 
+}
+
+.input-group.has-error::after 
+{
+    content: "Por favor, introduce un email válido";
+    color: #e74c3c;
+    font-size: 0.75rem;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.input-group.has-error label 
+{
+    color: #e74c3c;
+}
+
+.main-title 
+{
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.subtitle 
+{
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.input-group 
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.input-group label 
+{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.input-group.required label::after 
+{
+    content: " *";
+    color: #e74c3c;
+    margin-left: 3px;
+}
+
+.input-group input, 
+.input-group textarea 
+{
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.input-group textarea 
+{
+    height: 120px;
+    resize: none;
+}
+
+.privacy-container 
+{
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.checkbox-label 
+{
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.privacy-container::after 
+{
+    content: "Leer las condiciones";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.75rem;
+    color: #2e7d32; 
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.submit-btn-disabled 
+{
+    width: 100%;
+    padding: 18px;
+    background-color: #bdc3c7; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.next-steps-card 
+{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.next-steps-card h3 
+{
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.custom-steps 
+{
+    list-style: none;
+    padding: 0;
+    counter-reset: my-counter;
+}
+
+.custom-steps li 
+{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    counter-increment: my-counter;
+}
+
+.custom-steps li::before 
+{
+    content: counter(my-counter);
+    background-color: #1b3022; 
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
