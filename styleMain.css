@@ -163,7 +163,7 @@ body
 .productsGrid 
 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 40px;
     padding: 40px;
     margin-top: -35px;
@@ -174,19 +174,23 @@ body
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
 .productImageWrapper 
 {
     width: 100%;
-    height: 250px;
+    height: 130px;
     overflow: hidden;
-    border-radius: 20px; 
 }
 
 .productImage {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .specialProduct::after
@@ -212,26 +216,24 @@ body
 
 .productInfo 
 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     background-color: white;
-    margin-top: -50px; 
-    padding: 20px;
-    border-radius: 0 0 12px 12px; 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    z-index: 2;
+    padding: 20px; 
     position: relative;
-    border-top: 1px solid rgba(0,0,0,0.05);
 }
 
 .productInfo h5 
 {
-    margin: 0 0 8px 0;
+    margin: 0px;
     font-size: 1.2rem;
     color: #333;
 }
 
 .productInfo p 
 {
-    margin: 0 0 15px 0;
+    margin: 0px;
     color: #777;
     font-size: 12.8px;
     font-family: 'Inter';
