@@ -93,7 +93,6 @@ body
     height: auto;
     top: auto;
     left: auto;
-    bottom: auto; 
     object-fit: initial; 
     filter: brightness(60%);
 }
