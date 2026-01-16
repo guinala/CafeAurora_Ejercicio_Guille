@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Café Aurora - Principal</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header>
+            <nav class="topbar">
+                <button class="topbar-profile">CA</button>
+                <button class="icon-button">
+                    <label for="f-toggle">
+                        <img class="topbar-icon" src="../img/optionsIcon.svg" alt="Opciones">
+                    </label>
+                </button>
+            </nav>
+
+            <section class="background" text-message="NUEVO">
+                <img class="background-image" src="../img/CafeAurora.png" alt="Taza de Café">
+                <div class="subtitles">
+                    <h2 class="subtitles-title">Café Aurora</h2>
+                    <p class="subtitles-paragraph">Experiencia artesanal con cada taza</p>
+                </div>
+            </section>
+        </header>
+        <input type="checkbox" id="f-toggle" class="toggle">
+        <div class="menu">
+            <label for="f-toggle">&#9776;</label>
+            <ul class="menu-list">
+                <li class="menu-list__element">Inicio</li>
+                <li class="menu-list__element">Iniciar Sesión</li>
+                <li class="menu-list__element">Sobre Nosotros</li>
+                <li class="menu-list__element">Contacto</li>
+            </ul>
+        </div>
+        
+        <section>
+            <h4 class="category-title">Categorías</h4>
+            <ul class="category-list">
+                <li><button class="list-element">Café</button></li>
+                <li><button class="list-element">Postres</button></li>
+                <li><button class="list-element">Bebidas</button></li>
+                <li><button class="list-element">Especialidades</button></li>
+            </ul>
+        </section>
+
+        <h3 class="products-title">Nuestros Productos</h3>
+        <main class="products-grid">
+            <article class="product-card">
+                <div text-message="POPULAR" class="product-image-container special-product">
+                    <img src="../img/cafe1.png" alt="Expresso" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h5 class="product-title">Expresso Intenso</h5>
+                    <p class="product-description">Café 100% arábico de origen único</p>
+                    <span class="price">$3.50</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image-container">
+                    <img src="../img/tarta.png" alt="Tarta" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h5 class="product-title">Tarta de Chocolate</h5>
+                    <p class="product-description">Bizcocho húmedo con Chocolate</p>
+                    <span class="price">$4.50</span>
+                </div>
+            </article>
+            <article class="product-card">
+                <div text-message="VEGANO" class="product-image-container special-product vegan">
+                    <img src="../img/cafe2.png" alt="Tarta"  class="product-image">
+                </div>
+                <div class="product-info">
+                    <h5 class="product-title">Capuccino Clásico</h5>
+                    <p class="product-description">Expresso con espuma de leche</p>
+                    <span class="price">$4.50</span>
+                </div>
+            </article>
+            <article class="product-card">
+                <div text-message="POPULAR" class="product-image-container special-product">
+                    <img src="../img/croissant.png" alt="Tarta" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h5 class="product-title">Croissant Artesanal</h5>
+                    <p class="product-description">Hojaldrado con mantequilla</p>
+                    <span class="price">$4.50</span>
+                </div>
+            </article>
+        </main>
+        <footer class="bottombar">
+            <button class="icon-button"><img src="../img/Home.png" alt="Inicio"></button>
+            <button class="icon-button"><img src="../img/Lupa.png" alt="Buscar"></button>
+            <button class="icon-button"><img src="../img/Heart2.png" alt="Pedidos"></button>
+            <button class="icon-button"><img src="../img/User.png" alt="Perfil"></button>
+        </footer>
+    </body>
+    <script></script>
+</html>
+

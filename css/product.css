@@ -7,13 +7,13 @@ body
     font-family: 'Segoe UI', sans-serif;
 }
 
-.topbarIcon
+.topbar-icon
 {
     width: 30px;
     height: 30px;
 }
 
-.iconButton
+.icon-button
 {
     padding: 0;
     background-color: white;
@@ -48,14 +48,14 @@ body
     box-sizing: border-box;
 }
 
-.hero-image-container 
+.background
 {
     width: 100%;
     height: 350px;
     margin-top: 64px;
 }
 
-.hero-image 
+.background-image 
 {
     width: 100%;
     height: 100%;

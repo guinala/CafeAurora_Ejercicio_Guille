@@ -22,14 +22,14 @@ body
     box-sizing: border-box;
 }
 
-.topbarIcon
+.topbar-icon
 {
     width: 24px;
     height: 24px;
 }
 
 
-.iconButton
+.icon-button
 {
     background: none;
     border: none;
@@ -105,6 +105,22 @@ body
     display: flex;
 }
 
+.message-container
+{
+    position:relative;
+}
+
+.message-container::after 
+{
+    content: "0/500 caracteres";
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    font-size: 0.85rem;
+    color: gray; 
+    text-decoration: underline;
+}
+
 .input-group.required label::after 
 {
     content: " *";
@@ -155,7 +171,7 @@ body
     text-decoration: underline;
 }
 
-.submit-btn-disabled 
+.submit-button-disabled 
 {
     width: 100%;
     padding: 18px;

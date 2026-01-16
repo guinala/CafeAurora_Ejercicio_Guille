@@ -14,13 +14,13 @@ body
     background-color: #FEFAF6;
 }
 
-.topbarIcon
+.topbar-icon
 {
     width: 30px;
     height: 30px;
 }
 
-.iconButton
+.icon-button
 {
     padding: 0;
     background-color: white;
@@ -29,7 +29,7 @@ body
     justify-content: center;
 }
 
-.topbarProfile
+.topbar-profile
 {
     background-color: green;
     border-radius: 25px;
@@ -54,12 +54,13 @@ body
 
 }
 
-.categoryList
+.category-list
 {
     list-style-type: none;
     display: flex;
     gap: 15px;
     justify-content: left;
+    overflow: hidden;
 }
 
 .background
@@ -86,7 +87,7 @@ body
     font-weight: lighter;
 }
 
-.backgroundImage {
+.background-image {
     position: relative; 
     display: block;
     width: 100%;
@@ -100,8 +101,8 @@ body
 .subtitles
 {
     position: absolute;
-    bottom: 40px;
-    left: 40px;  
+    bottom: 30px;
+    left: 25px;  
     z-index: 5;   
     color: white;
     text-align: left; 
@@ -109,18 +110,24 @@ body
     max-width: 80%;
 }
 
-.subtitlesTitle
+.subtitles-title
 {
     font-family: 'Playfair Display', serif;
-    font-size: 74px; 
-    margin: 0 0 10px 0;
+    font-size: 40px; 
+    margin: 0 0 20px 0;
     line-height: 1.1;
     font-weight: 500;
 }
 
-.subtitlesParagraph 
+.subtitles-title::first-letter
 {
-    font-size: 24px; 
+    font-size: 50px; 
+    margin-right: 8px;
+}
+
+.subtitles-paragraph 
+{
+    font-size: 15px; 
     margin: 0;
     font-family: 'Inter';
     font-weight: lighter;
@@ -160,7 +167,7 @@ body
     margin-left: 2px;
 }
 
-.productsGrid 
+.products-grid 
 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -169,7 +176,7 @@ body
     margin-top: -35px;
 }
 
-.productCard 
+.product-card 
 {
     position: relative;
     display: flex;
@@ -180,20 +187,21 @@ body
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
-.productImageWrapper 
+.product-image-container 
 {
     width: 100%;
     height: 130px;
     overflow: hidden;
 }
 
-.productImage {
+.product-image 
+{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.specialProduct::after
+.special-product::after
 {
     content: attr(text-message);
     position: absolute;
@@ -201,12 +209,12 @@ body
     right: 10px;
     background-color: #D4A574;
     padding: 4px 8px 4px 4px;
-    border-radius: 4px;
+    border-radius: 8px;
     color: white;
     z-index: 10;
     font-family: 'Inter';
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .vegan::after
@@ -214,7 +222,7 @@ body
     background-color: #28A745;
 }
 
-.productInfo 
+.product-info 
 {
     display: flex;
     flex-direction: column;
@@ -224,14 +232,14 @@ body
     position: relative;
 }
 
-.productInfo h5 
+.product-info h5 
 {
     margin: 0px;
     font-size: 1.2rem;
     color: #333;
 }
 
-.productInfo p 
+.product-info p 
 {
     margin: 0px;
     color: #777;
@@ -259,10 +267,10 @@ body
     justify-content: space-around; 
     align-items: center;     
     box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; 
+    z-index: 10;
 }
 
-.bottombar .iconButton 
+.bottombar .icon-button 
 {
     background: none;
     border: none;
@@ -270,13 +278,13 @@ body
     padding: 10px;
 }
 
-.bottombar .iconButton img 
+.bottombar .icon-button img 
 {
     width: 28px;
     height: 28px;
 }
 
-.bottombar .iconButton:first-child 
+.bottombar .icon-button:first-child 
 {
     position: relative;
     display: flex;
@@ -284,7 +292,7 @@ body
     align-items: center;
 }
 
-.bottombar .iconButton:first-child::after 
+.bottombar .icon-button:first-child::after 
 {
     content: ""; 
     position: absolute;
@@ -295,7 +303,7 @@ body
     border-radius: 50%; 
 }
 
-.bottombar .iconButton:hover img 
+.bottombar .icon-button:hover img 
 {
     filter: opacity(1);
     transform: scale(1.1);
@@ -303,10 +311,55 @@ body
 
 p, h2, button, h4
 {
-     font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 button
 {
     border: none;
+}
+
+.toggle 
+{
+    display: none;
+}
+
+.toggle + .menu 
+{
+    transform: translateX(-100%);
+}
+
+.toggle:checked + .menu 
+{
+    transform: translateX(0);
+}
+
+.menu 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    box-shadow: 1px 1px 1px black;
+    background-color: rgba(252, 247, 215, 0.923);
+    z-index: 1000;
+    transition: transform 0.8s ease-in;
+}
+
+.menu-list
+{
+    list-style: none;
+}
+
+.menu-list__element
+{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.menu-list__element:hover
+{
+    font-size: 30px;
 }
