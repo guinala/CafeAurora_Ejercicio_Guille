@@ -170,7 +170,7 @@ body
 .products-grid 
 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     padding: 40px;
     margin-top: -35px;
@@ -362,4 +362,22 @@ button
 .menu-list__element:hover
 {
     font-size: 30px;
+}
+
+@media screen and (width >= 600px) 
+{
+    .products-grid 
+    {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 30px;
+    }
+}
+
+@media screen and (width <= 300px) 
+{
+    .products-grid 
+    {
+        grid-template-columns: 1fr; 
+    }
 }
